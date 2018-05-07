@@ -6,8 +6,6 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-    Result.create res: '<떡상중>'
-    Result.create res: '<존버중>'
-    Result.create res: '<중타치>'
-    Result.create res: '<상타치>'
-    Result.create res: '<떡상중>'
+    ['<떡상중>','<존버중>','<중타치>','<상타치>','<떡상중>'].each do |r|
+	Result.create res: r
+end
